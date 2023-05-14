@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.images {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    padding: 15px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.one { grid-area: img1; }
+.two { grid-area: img2; }
+.three { grid-area: img3; }
+.four { grid-area: img4; }
+.five { grid-area: img5; }
+.six { grid-area: img6; }
+.seven { grid-area: img7; }
+.eight { grid-area: img8; }
+.nine { grid-area: img9; }
+
+
+@media only screen and (max-width: 640px) {
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.3fr 0.3fr 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.4fr 0.5fr 0.3fr 0.5fr;
+        grid-template-areas: 
+        "img1 img1 img1 img1 img1 img1 img1 img1 . ."
+        "img2 img2 img2 img2 img2 img2 img2 img2 img2 ."
+        "img3 img3 img3 img3 img3 img3 img3 img3 . ."
+        "img4 img4 img4 img4 img4 img4 img6 img6 img6 img6"
+        "img5 img5 img5 img5 . . img6 img6 img6 img6"
+        "img7 img7 img7 img7 img7 img8 img8 img8 img8 ."
+        "img7 img7 img7 img7 img7 img8 img8 img8 img8 ."
+        "img9 img9 img9 img9 img9 img9 img9 . . ."
+        "img9 img9 img9 img9 img9 img9 img9 . . .";
+    }
+}
+
+
+
+@media only screen and (max-width: 1366px) {
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.7fr 0.3fr 0.3fr 0.3fr 0.3fr;
+        grid-template-areas:
+            "img1 img1 img1 img1 img1 img1 img1 img1 img1 img1 . . ."
+            "img2 img2 img2 img2 img2 img2 img2 img2 img2 img2 img2 img2 ."
+            "img3 img3 img3 img3 img3 img3 img3 img3 img3 . . . ."
+            "img4 img4 img4 img4 img4 img4 img4 img5 img5 img5 img5 img5 img5"
+            "img6 img6 img6 img6 img7 img7 img7 img7 img7 img7 . . ."
+            "img6 img6 img6 img6 img7 img7 img7 img7 img7 img7 . . ."
+            "img8 img8 img8 img9 img9 img9 img9 img9 img9 . . . ."
+            "img8 img8 img8 img9 img9 img9 img9 img9 img9 . . . ."
+            "img8 img8 img8 img9 img9 img9 img9 img9 img9 . . . .";
+    }
+}
+
+
+@media only screen and (min-width: 1366px) {
+
+    .container {
+        gap: 0 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.3fr 0.1fr 0.4fr 0.5fr;
+        grid-template-areas:
+            "img1 img1 img1 img1 img1 img1 img1 img1 img2 img2 img2 img2 img2 img2 img2 img2 img2 img2"
+            "img3 img3 img3 img3 img3 img3 img3 img4 img4 img4 img4 img4 img5 img5 img5 img5 img5 img5"
+            "img3 img3 img3 img3 img3 img3 img3 img4 img4 img4 img4 img4 img5 img5 img5 img5 img5 img5"
+            "img6 img6 img6 img7 img7 img7 img7 img7 . img8 img8 img9 img9 img9 img9 img9 img9 img9"
+            "img6 img6 img6 img7 img7 img7 img7 img7 . img8 img8 img9 img9 img9 img9 img9 img9 img9";
+    }
+
+}

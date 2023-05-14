@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="t06. Oscorp">
+    <link rel="stylesheet" href="style.css">
+    <title>Oscorp</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="head-oscorp_1">
+            <div class="search_div">
+                <img src="./assets/images/search.png" alt="search icon" class="search-icon">
+                <input placeholder="Search" id = "search_input" class="search_input">
+            </div>
+            <img src="./assets/images/oscorp_logo.png" alt="oscorp logo" class="oscorp-logo">
+            <span class="head-oscorp_1-phone">Phone:<br>+1 (555) 555-0199</span>
+        </div>
+        <nav class="head-oscorp_nav">
+            <div class="oscorp_nav">
+                <ul>
+                    <li><a href="#" class="head-oscorp_menu">About us</a></li>
+                    <li><a href="#" class="head-oscorp_menu">News</a></li>
+                    <li><a href="#" class="head-oscorp_menu">Service</a></li>
+                    <li><a href="#" class="head-oscorp_menu">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-menu">
+            <ul class="main-menu_list">
+                <li><a href="#" class="main-menu_list-a">Home</a></li>
+                <li><a href="./index.html" class="main-menu_list-a">Catalog</a></li>
+                <li><a href="#" class="main-menu_list-a main-menu_list-a__active">Product</a></li>
+            </ul>
+        </div>
+        <section class="main-section">
+            <div class="item product">
+                <div class="product-img_container">
+                    <img itemprop="image" src="./assets/images/serum.png" alt="Super soldier serum" class="product-img">
+                </div>
+                <div class="item-about product-about">
+                    <p itemprop="name" class="item-about_name product-name">Super soldier serum</p>
+                    <p itemprop="price" class="item-about_price">$15000</p>
+                    <p class="item-about_avaliability">Avaliable</p>
+                    <button class="item-about_buy product-buy">BUY</button>
+                    <div class="product-description">
+                        <p class="product-about_description">Description</p>
+                        <p class="product-about_description_content">
+                            A super-experimental substance that increases a person's strength, endurance, and speed.
+                            This serum will turn an ordinary person into a super-hero capable of defeating any enemy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="reviews-section">
+            <h3 class="reviews-header">Reviews</h3>
+            <div class="reviews">
+                <div itemprop="review" class="review">
+                    <div class="info">
+                        <img itemprop="avatar" src="./assets/images/avatar.png" alt="avatar" class="author-avatar">
+                        <div class="review-info">
+                            <p itemprop="author" class="author-name">Cap</p>
+                            <p itemprop="description" class="review-content">It's plagiarism</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <div class="div-footer">
+            <span class="footer-copyright">Copyright 2023</span>
+            <span class="footer-rights">All rights reserved</span>
+        </div>
+    </footer>
+</body>

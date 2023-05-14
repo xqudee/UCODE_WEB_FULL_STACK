@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="t06. Oscorp">
+    <link rel="stylesheet" href="style.css">
+    <title>Oscorp</title>
+</head>
+<body>
+    <header>
+        <div class="head-oscorp_1">
+            <div class="search_div">
+                <img src="./assets/images/search.png" alt="search icon" class="search-icon">
+                <input placeholder="Search" id = "search_input" class="search_input">
+            </div>
+            <img src="./assets/images/oscorp_logo.png" alt="oscorp logo" class="oscorp-logo">
+            <span class="head-oscorp_1-phone">Phone:<br>+1 (555) 555-0199</span>
+        </div>
+        <nav class="head-oscorp_nav">
+            <div class="oscorp_nav">
+                <ul>
+                    <li><a href="#" class="head-oscorp_menu">About us</a></li>
+                    <li><a href="#" class="head-oscorp_menu">News</a></li>
+                    <li><a href="#" class="head-oscorp_menu">Service</a></li>
+                    <li><a href="#" class="head-oscorp_menu">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-menu">
+            <ul class="main-menu_list">
+                <li><a href="#" class="main-menu_list-a">Home</a></li>
+                <li><a href="#" class="main-menu_list-a main-menu_list-a__active">Catalog</a></li>
+            </ul>
+        </div>
+        <article>
+            <section class="main-section">
+                <div class="catalog-name">
+                    <h2>Catalog</h2>
+                    <div class="filters-first">
+                        <label class="filters-first-all">
+                            <input type="checkbox" class="filter">
+                            <span class="oval">Electronics</span>
+                        </label>
+                        <label class="filters-first-all">
+                            <input type="checkbox" class="filter">
+                            <span class="oval">Weapons</span>
+                        </label>
+                        <label class="filters-first-all">
+                            <input type="checkbox" class="filter">
+                            <span class="oval">Robotics</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="catalog-content">
+                    <div class="filters-second">
+                        <div class="power-container">
+                            <p>Power</p>
+                            <div class="filters-second-checkbox">
+                                <input type="checkbox" class="filter-sec"><span class="filter-sec-name">None (0%)</span><br>
+                                <input type="checkbox" class="filter-sec"><span class="filter-sec-name">Low (10-20%)</span><br>
+                                <input type="checkbox" class="filter-sec"><span class="filter-sec-name">Moderate (20-40%)</span><br>
+                                <input type="checkbox" class="filter-sec"><span class="filter-sec-name">Middle (40-60%)</span><br>
+                                <input type="checkbox" class="filter-sec"><span class="filter-sec-name">High (60-80%)</span><br>
+                                <input type="checkbox" class="filter-sec"><span class="filter-sec-name">Lethal (80-100%)</span>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <p>Price</p>
+                            <div class="range">
+                                <span class="range-label range-label-start">0</span>
+                                <input type="range" min="0" max="100000" step="1000" class="price-range">
+                                <span class="range-label range-label-end">100000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-container">
+                        <div class="item">
+                            <a href="./card.html">
+                                <img itemprop="image" src="./assets/images/serum.png" alt="Super soldier serum" class="item-img">
+                            </a>
+                            <div class="item-about">
+                                <a href="./card.html"><p itemprop="name" class="item-about_name">Super Soldier Serum</p></a>
+                                <p itemprop="price" class="item-about_price">$15000</p>
+                                <p itemprop="avaliability" class="item-about_avaliability">Avaliable</p>
+                                <p itemprop="avaliability" class="item-about_avaliability>Not avaliable"></p>
+                                <a href="./card.html"><button class="item-about_buy">BUY</button></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img itemprop="image" src="./assets/images/supergrowth.png" alt="Supergrowth" class="item-img">
+                            <div class="item-about">
+                                <p itemprop="name" class="item-about_name">Supergrowth</p>
+                                <p itemprop="price" class="item-about_price">$100</p>
+                                <p itemprop="avaliability" class="item-about_avaliability item-not_avaliable">Not avaliable</p>
+                                <button class="item-about_buy btn-not_avaliable">BUY</button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img itemprop="image" src="./assets/images/anti-theft_device.png" alt="Super strong anti-theft device" class="item-img">
+                            <div class="item-about">
+                                <p itemprop="name" class="item-about_name">Super Strong Anti-Theft Device</p>
+                                <p itemprop="price" class="item-about_price">$1000</p>
+                                <p itemprop="avaliability" class="item-about_avaliability item-not_avaliable">Not avaliable</p>
+                                <button class="item-about_buy btn-not_avaliable">BUY</button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img itemprop="image" src="./assets/images/CyberBody.png" alt="CyberBody" class="item-img">
+                            <div class="item-about">
+                                <p itemprop="name" class="item-about_name">CyberBody</p>
+                                <p itemprop="price" class="item-about_price">$8000</p>
+                                <p itemprop="avaliability" class="item-about_avaliability item-not_avaliable">Not avaliable</p>
+                                <button class="item-about_buy btn-not_avaliable">BUY</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="div-footer">
+            <span class="footer-copyright">Copyright 2023</span>
+            <span class="footer-rights">All rights reserved</span>
+        </div>
+    </footer>
+</body>
+</html>

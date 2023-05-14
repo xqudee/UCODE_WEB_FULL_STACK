@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.settings-menu {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-menu_div {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: #32333D;
+    padding: 30px;
+}
+
+.settings-win {
+    display: flex;
+    background-color: #4F5161;
+    color: white;
+    justify-content: center;
+    width: 700px;
+    border: 1px solid #18181b;
+    box-shadow: 0 0 30px rgb(47, 47, 47);
+}
+
+.setting {
+    margin-bottom: 30px;
+}
+
+.settings {
+    padding: 20px 20px 40px 0;
+    width: 50%;
+}
+
+.settings:first-child {
+    padding-left: 40px;
+}
+
+.setting-size {
+    width: 150px;
+    display: flex;
+}
+
+.setting-size > h1 {
+    width: 100%;
+    text-align: right;
+}
+
+.setting-range {
+    width: 90%;
+    appearance: none;
+    background: none;
+    height: 1px;
+    background-color: black;
+}
+
+
+.setting-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #cbb8f4;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+.range-label {
+    position: absolute;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.range-label-end {
+    font-size: 30px;
+}
+
+.setting-ui {
+    display: flex;
+    align-items: center;
+}
+
+.setting-ui p {
+    padding-right: 40%;
+}
+
+.switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    outline: none;
+    -webkit-appearance: none;
+    background-color: #d2d2d2;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.switch:checked {
+    background-color: #B8BBE0;
+}
+
+.switch::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 20px;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.switch:checked::before {
+    left: 20px;
+    transition: .5s;
+}
+
+.switch_colors {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    border: 1px solid #414047;
+}   
+
+.switch_colors:checked::after {
+    content: "\2714";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.color-blue {
+    background-color: blue;
+}
+
+.color-green {
+    background-color: rgb(45, 176, 78);
+}
+
+.color-pink {
+    background-color: rgb(250, 76, 209);
+}
+
+.color-yellow {
+    background-color: rgb(255, 237, 37);
+}
+
+.color-orange {
+    background-color: rgb(255, 124, 37);
+}
+
+.menu-div {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    list-style-type: none;
+    background-color: #2a2a32;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    position: relative;
+}
+
+img {
+    transform:scale(0.6);
+}

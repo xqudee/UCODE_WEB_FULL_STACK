@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Handbook</title>
+    <meta name="description" content="t03. Handbook">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="name">Handbook</h1>
+    <hr>
+    <div>
+        <h3 class="section">HTML</h3>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h4>&lt;h1&gt; to &lt;h6&gt;</h4>
+                <p>It defines headings for an HTML document from level 1 to level 6.</p>
+                <h5 class="code-ex">&lt;h2&gt;Title&lt;/h2&gt;</h5>
+                <h1 class="code-view">Title</h1>
+            </div>
+            <div class="grid-item">
+                <h4>&lt;input&gt;</h4>
+                <p>It defines an input field within an HTML form.</p>
+                <h5 class="code-ex">&lt;input attributes&gt;</h5>
+                <div class="code-view">
+                <input type="text" placeholder="Enter some text">
+                </div>
+            </div>
+            <div class="grid-item">
+                <h4>&lt;q&gt;</h4>
+                <p>It defines short inline quotation.</p>
+                <h5 class="code-ex">&lt;q&gt;quote&lt;/q&gt;</h5>
+                <div class="code-view">
+                    <q class="code-view">Anger is never without a reason, but seldom with a good one</q>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h4>&lt;select&gt;</h4>
+                <p>It defines short inline quotation.</p>
+                <h5 class="code-ex">&lt;select&gt;<br>&lt;option&gt;&lt;/option&gt;<br>&lt;/select&gt;</h5>
+                <div class="code-view">
+                    <select>
+                        <option>C++</option>
+                        <option>Java</option>
+                        <option>Delphi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h4>&lt;textarea&gt;</h4>
+                <p>It is used to define multiple line input, such as comment, feedback, and review, etc.</p>
+                <h5 class="code-ex">&lt;textarea attributes&gt;&lt;/textarea&gt;</h5>
+                <div class="code-view">
+                    <textarea rows="4" cols="20" placeholder="Enter some text"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h3 class="section">CSS</h3>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h4>border</h4>
+                <p>Sets the width, style, and color for all four sides of an element's border.</p>
+                <h5 class="code-ex">border: 1px solid #5675a3;</h5>
+                <div style="margin-bottom: 30px; border: 1px solid #5675a3; width: 80px;" class="code-view"></div>
+            </div>
+            <div class="grid-item">
+                <h4>font-family</h4>
+                <p>Defines a list of fonts for element.</p>
+                <h5 class="code-ex">font-family: Arial, Helvetica, sans-serif;</h5>
+                <div class="code-view">
+                    <p style="font-family: Arial, Helvetica, sans-serif;">Text</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h4>opacity</h4>
+                <p>Specifies the transparency of an element.</p>
+                <h5 class="code-ex">opacity: alphavalue;</h5>
+                <div class="code-view">
+                    <div class="code-view" style="width: 70px; scale: 0.8; background-color: #08d1ff; opacity: 1;"></div>
+                    <div class="code-view" style="width: 70px; scale: 0.8; background-color: #08d1ff; opacity: 0.7;"></div>
+                    <div class="code-view" style="width: 70px; scale: 0.8; background-color: #08d1ff; opacity: 0.4;"></div>
+                    <div class="code-view" style="width: 70px; scale: 0.8; background-color: #08d1ff; opacity: 0.2;"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h4>padding</h4>
+                <p>Sets the padding on all four sides of the element.</p>
+                <h5 class="code-ex">padding: 20px 14px 10px 14px;</h5>
+                <div class="code-view">
+                    <div style="background-color: #5675a3; padding: 20px 14px 10px 14px;">text</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h4>text-decoration</h4>
+                <p>Specifies the decoration added to text.</p>
+                <h5 class="code-ex">text-decoration: [ underline | overline | line-through | blink ]</h5>
+                <div class="code-view">
+                    <p style="text-decoration:overline;">Overline</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h4>text-transform</h4>
+                <p>Transforms the case of the text.</p>
+                <h5 class="code-ex">
+                    text-transform: [ capitalize | lowercase | none | uppercase ]</h5>
+                <div class="code-view">
+                    <p style="text-transform:uppercase;">Uppercase</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h3 class="section">Protocols</h3>
+        <div class="grid-container grid-protocols">
+            <div class="grid-item grid-item-protocols">
+                <h4>HTTP methods</h4>
+                <p>GET - use this type of requests to retrieve resource representation/information only - and not to modify it in any way</p>
+                <p>POST - used to create a new resource into the collection of resources</p>
+                <p>PUT - use it primarily to update existing resource (if the resource does not exist then API may decide to create a new resource or not)</p>
+                <p>DELETE - used to delete resources (identified by the Request-URI)</p>
+                <p>PATCH - HTTP PATCH requests are to make partial update on a resource</p>
+            </div>
+            <div class="grid-item grid-item-protocols">
+                <h4>HTTP status code</h4>
+                <p>1xx: Informational<br>example: 100 Continue</p>
+                <p>2xx: Success<br>example: 201 Created</p>
+                <p>3xx: Redirection<br>example: 301 Moved Permanently</p>
+                <p>4xx: Client Error<br>example: 404 Not Found</p>
+            </div>
+            <div class="grid-item grid-item-protocols">
+                <h4>DNS list by types</h4>
+                <p>A - (address record) - specifies IP address (IPv4) for given host. A records are used for conversion of domain names to corresponding IP addresses</p>
+                <p>AAAA (IPv6 address record) - specifies IPv6 address for given host. So it works the same way as the A record and the difference is the type of IP address</p>
+                <p>CNAME (canonical name record) - specifies a domain name that has to be queried in order to resolve the original DNS query. Therefore CNAME records are used for creating aliases of domain names. CNAME records are truly useful when we want to alias our domain to an external domain. In other cases we can remove CNAME records and replace them with A records and even decrease performance overhead</p>
+                <p>HINFO (Host Information records) - used to acquire general information about a host. The record specifies type of CPU and OS. The HINFO record data provides the possibility to use operating system specific protocols when two hosts want to communicate. For security reasons the HINFO records are not typically used on public servers</p>
+                <p>ISDN (Integrated Services Digital Network records) - specifies ISDN address for a host. An ISDN address is a telephone number that consists of a country code, a national destination code, a ISDN Subscriber number and, optionally, a ISDN subaddress. The function of the record is only variation of the A resource record function</p>
+                <p>MX (Mail exchanger record) - specifies a mail exchange server for a DNS domain name. The information is used by Simple Mail Transfer Protocol (SMTP) to route emails to proper hosts. Typically, there are more than one mail exchange server for a DNS domain and each of them have set priority</p>
+                <p>NS (name server) - specifies an authoritative name server for given host</p>
+                <p>PTR (Reverse-lookup Pointer records) - As opposed to forward DNS resolution (A and AAAA DNS records), the PTR record is used to look up domain names based on an IP address</p>
+                <p>SOA (Start of Authority records) - The record specifies core information about a DNS zone, including the primary name server, the email of the domain administrator, the domain serial number, and several timers relating to refreshing the zone</p>
+                <p>TXT (Text records) - The text record can hold arbitrary non-formatted text string. Typically, the record is used by Sender Policy Framework (SPF) to prevent fake emails to appear to be sent by you</p>
+            </div>
+            <div class="grid-item grid-item-protocols">
+                <h4>To identify google.com IP, follow the next steps:</h4>
+                <ol>
+                    <li>open Terminal</li>
+                    <li>paste and run the command nslookup google.com</li>
+                </ol>
+                <p>As result, you will receive "name" and "address":<br>Name: google.com.ua<br>
+                    Address: 216.58.215.99<br>
+                    Repeat steps 1 and 2 to identify google.com.ua IP</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

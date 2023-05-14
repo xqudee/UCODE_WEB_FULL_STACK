@@ -1,0 +1,12 @@
+.inf-gauntlet {
+    display: block;
+    width: 30%;
+}
+
+.man-row > img {
+    width: 10%;
+}
+
+.inf-gauntlet:hover + .man-icons img[class*="disappear"] {
+    visibility: hidden;
+}
