@@ -103,7 +103,7 @@ body {
 }
 
 .switch:checked {
-    background-color: #B8BBE0;
+    background-color: #cbb8f4;
 }
 
 .switch::before {
@@ -141,23 +141,23 @@ body {
     color: #fff;
 }
 
-.color-blue {
+#color-blue {
     background-color: blue;
 }
 
-.color-green {
+#color-green {
     background-color: rgb(45, 176, 78);
 }
 
-.color-pink {
+#color-pink {
     background-color: rgb(250, 76, 209);
 }
 
-.color-yellow {
+#color-yellow {
     background-color: rgb(255, 237, 37);
 }
 
-.color-orange {
+#color-orange {
     background-color: rgb(255, 124, 37);
 }
 

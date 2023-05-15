@@ -37,7 +37,7 @@ li {
     padding: 20px;
 }
 
-.submenu, .submenu_2, .submenu_3, .submenu_4 {
+.submenu_2, .submenu_3, .submenu_4 {
     display: none;
 }
 
@@ -51,9 +51,6 @@ li {
     top: 100%;
     left: 0;
     padding-top: 10px;
-}
-
-.menu:hover .submenu {
     display: flex;
 }
 
