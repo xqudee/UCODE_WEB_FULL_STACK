@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.action_button, #turn_into_superhero {
+    background-color: #E2F3FC;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 40px;
+}
+
+#task_name {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#human_img {
+    height: 200px;
+}
+
+#first_div {
+    background-color: rgba(145, 210, 244, 0.26);
+    border-radius: 15px;
+    border: 2px solid black;
+    position: relative;
+    width: 300px;
+}
+
+#second_div {
+    width: 300px;
+    text-align: center;
+}
+
+#info_div {
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#properties_list {
+    margin-top: 10px;
+}
+
+#calories {
+    text-align: center;
+    border-bottom: 2px solid;
+    width: 70%;
+}
+
+#calories_div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons_div {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons_div:not(:first-child)::after {
+    padding-right: 10px;
+}
+
+#superhero_buttons {
+    display: none;
+    width: 100%;
+}
+
+#superhero_buttons > .action_button {
+    background-color: #E3FCE2;    
+}
+
+#turn_into_superhero {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.action_button {
+    width: 50%;
+    margin: 5px;
+}
+
+#speech_img_div {
+    position: absolute;
+    right: 0;
+}
+
+#speech_img {
+    width: 150px;
+}
+
+#message_div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+    width: 84px;
+    height: 43px;
+}
