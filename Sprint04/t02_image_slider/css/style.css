@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#image-div {
+    display: flex;
+    height: 400px;
+    width: 470px;
+    margin-top: 30px;
+}
+
+.image {
+    height: 100%;
+    width: 380px;
+    object-fit: cover;
+    display: none;
+    transition: 2s ease;
+}
+
+button {
+    width: 50px;
+    border: none;
+    background-color: rgb(205, 205, 205);
+    position: relative;
+}

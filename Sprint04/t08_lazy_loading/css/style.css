@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#message {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: red;
+    border-radius: 30px;
+    font-size: 20px;
+    width: max-content;
+    padding: 10px;
+}
+
+img {
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+}
